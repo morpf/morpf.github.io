@@ -1,0 +1,90 @@
+<!DOCTYPE html>              
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Мой сайт</title>                       
+        <link rel="stylesheet" href="style.css">                   <!-- ссылка на css -->
+        <link rel="icon" href="icon.jpg">                          <!-- фавикон -->
+        <script type = "text/javascript" src="functions.js"></script> 
+
+    </head>
+
+    <body>                                                               <!-- лого и группа -->
+        <header>
+            <div class="basicDiv"> 
+                <div id="headerLeftDiv">
+                    <img src="icon.jpg" id="Logo" alt="лого">
+                    <p style="margin-top:10px">Лого</p>
+                </div>
+                <div id="headerRightDiv">
+                    <p style="margin-top:27px; margin-bottom:10px">Группа ЭФБО-02-23</p>
+                    <p style="margin-top:10px">Андронова Арина Андреевна</p>
+                </div>
+            </div>
+
+            <div class="flexbox">                                    <!-- навигация по сайту -->
+                <nav>
+                    <ul>
+                        <li class="navli"><a href="#">Главная</a></li>
+                        <li class="navli"><a href="firstsemPage.html">Первый семестр</a></li>
+                        <li class="navli"><a href="secondsemPage.html">Второй семестр</a></li>
+                        <li class="navli"><a href="servicesPage.html">Услуги</a></li>
+                        <li class="navli"><a href="#">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="basicDiv" style="display:flex">                <!-- навигация по странице -->
+                <div id="mainLeftDiv">
+                    <p id="pNavigation"><span>Навигация по странице</span></p>
+                    <nav>
+                        <ul class="navLeftUl">
+                            <li class="navLeftLi"><a href="#front">Фронтенд</a></li>
+                            <li class="navLeftLi"><a href="#back">Бэкенд</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="mainRightDiv">                                    <!-- основной блок -->
+                    <h2 id="hWelcome"><span>Добро пожаловать на мой сайт</span></h2>
+                    <div id="intro">
+                        <div id="introLeft">
+                            <p style="margin-left: 35px">Меня зовут Андронова Арина Андреевна и я начинающий специалист по веб-разработке</p>
+                        </div>
+                        <div id="introRight">
+                            <img src="me.jpg" id="ya" alt="я">
+                        </div>
+                    </div>
+
+
+                    <h3 style="margin-left: 35px" id="front">Фронтенд</h3>
+                    <p style="margin-left: 35px"> Фронтенд (или клиентская часть)&nbsp;&mdash; это то, что видит пользователь. Он&nbsp;включает в&nbsp;себя все визуальные элементы <nobr>веб-сайта</nobr>. или приложения: кнопки, формы, изображения и&nbsp;текст. Фронтенд разработчики используют языки разметки и&nbsp;стилизации, такие как НТМL, СSS и&nbsp;JavaScript, чтобы создавать интерактивные и&nbsp;привлекательные интерфейсы. Основная задача фронтенда&nbsp;&mdash; обеспечить удобство использования и&nbsp;эстетическую привлекательность.</p>
+                    <video controls="" autoplay name="media"  muted><source src="video1.mp4" type="video/mp4"></video>
+                    <h3 style="margin-left: 35px" id="back">Бэкенд</h3>
+                    <p style="margin-left: 35px">Бэкенд (или серверная часть)&nbsp;&mdash; это &laquo;за&nbsp;кулисами&raquo; <nobr>веб-приложения</nobr>. Он&nbsp;отвечает за&nbsp;обработку данных, управление пользователями и&nbsp;взаимодействие с&nbsp;базами данных. Бэкенд разработчики используют языки программирования, такие кок Рhyton или РНР, а&nbsp;также фреймворки и&nbsp;базы данных для создания логики приложения. Основная задача бэкенда&nbsp;&mdash; обеспечить стабильную работу приложения и&nbsp;безопасность данных.</p>
+                    <video controls="" autoplay name="media2"  muted><source src="video2.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="basicDiv" style="display:flex">                     <!-- низ -->
+                <div id="footerLeft">
+                    <p class="footerMe"> Андронова Арина Андреевна, 2024</p>
+                </div>
+                
+                <div id="footerRight">
+                    <nav>
+                        <ul id="footerRightUl">
+                            <li class="footerLi"><a href="https://vk.com/jokes_about_dicks" class="contact"><img src="vk.png" id="vk" alt="вк"></a></li>
+                            <li class="footerLi"><a href="https://t.me/morfph" class="contact"><img src="tg.png" id="tg" alt="тг"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
