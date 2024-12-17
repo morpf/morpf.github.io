@@ -1,0 +1,165 @@
+<!DOCTYPE html>               <!-- Это комментарий в HTML -->
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Услуги</title>
+        <link rel="stylesheet" href="style.css">                      <!-- ссылка на css -->
+        <link rel="icon" href="icon.jpg">                             <!-- фавикон -->
+        <script type = "text/javascript" src="functions.js"></script> <!-- ссылка на js -->
+    </head>
+    <body>
+        <div class="overlay"></div>                    <!-- затемнение при открытии формы -->
+        <header>                                       <!-- лого и группа -->
+            <div class="basicDiv"> 
+                <div id="headerLeftDiv">
+                    <img src="icon.jpg" id="Logo" alt="лого">
+                    <p style="margin-top:10px">Лого</p>
+                </div>
+                <div id="headerRightDiv">
+                    <p style="margin-top:27px; margin-bottom:10px">Группа ЭФБО-02-23</p>
+                    <p style="margin-top:10px">Андронова Арина Андреевна</p>
+                </div>
+            </div>
+
+            <div class="flexbox">                    <!-- навигация по сайту -->
+                <nav>
+                    <ul>
+                        <li class="navli"><a href="mainPage.html">Главная</a></li>
+                        <li class="navli"><a href="firstsemPage.html">Первый семестр</a></li>
+                        <li class="navli"><a href="secondsemPage.html">Второй семестр</a></li>
+                        <li class="navli"><a href="#">Услуги</a></li>
+                        <li class="navli"><a href="#">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="basicDiv basicDiv-flex mainHeight">
+                <div id="mainLeftDiv">
+                    <p id="pNavigation"><span>Навигация по странице</span></p>     <!-- навигация по странице -->
+                    <nav>
+                        <ul class="navLeftUl">
+                            <li class="navLeftLi"><a href="#">Разработка</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div id="mainRightDiv">                                <!-- основной блок -->
+                    <h2 style="margin-left: 35px">Разработка веб-приложений</h2>
+                    <div class = "grid-container">
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="сайт-визитка">
+                            <p>Сайт-визитка</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="корпоративный сайт">
+                            <p>Корпоративный сайт</p>   
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="интернет-магазин">
+                            <p>Интернет-магазин</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>   
+                        </div>
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="сайт-визитка">
+                            <p>Мобильное приложение</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="корпоративный сайт">
+                            <p>Видеоигра</p>   
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="grid-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="интернет-магазин">
+                            <p>Что-угодно</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>   
+                        </div>
+                    </div>
+
+                    <div class="popup">                                      <!-- Форма отправки -->
+                        <form id="popup" autocomplete="on">     
+                            <button id="closeButton" onclick="closePopup()" formnovalidate>&times;</button>
+                            <h3 class="popup">Разработка веб-приложений</h3>
+                            <p class="popup">Заполните форму и мы обязательно свяжемся с вами для уточнения деталей</p>
+                            <label class="Form" forx="nameReq">Имя</label>
+                            <input class="Form" type="text" id="nameReq" name="nameReq" autocomplete="given-name" required><br />
+                            <label class="Form" for="lastNameReq">Фамилия</label>
+                            <input class="Form" type="text" id="lastNameReq" name="lastNameReq" autocomplete="family-name" required><br />
+                            <label class="Form" for="emailReq">Ваш e-mail</label>
+                            <input class="Form" type="email" id="emailReq" name="emailReq" autocomplete="email" required><br />
+                            <label class="Form" for="phoneReq">Телефон</label>
+                            <input class="Form" type="tel" id="phoneReq" name="phoneReq" autocomplete="tel" required><br />
+                            <label class="Form" for="countryReq">Страна</label>
+                            <select name="countryReq" id="countryReq">
+                                <option value="">--Выберите страну--</option>
+                                <option value="dog">Россия</option>
+                                <option value="cat">Казахстан</option>
+                                <option value="hamster">Беларусь</option>
+                            </select><br />
+                            <label class="Form" for="dateReq">Дата</label>
+                            <input class="Form" type="date" id="dateReq" name="dateReq"><br />
+                            <label class="Form" for="commentReq">Комментарий</label>
+                            <textarea id="commentReq"></textarea><br />
+                            <input class="Form" type="checkbox" id="agreementReq" name="agreementReq" required>
+                            <label class="Form" for="agreementReq" id="agreementReqLabel">Cогласен на обработку моих персональных данных</label><br />
+                            <div class="submitButton"><button type="submit" onclick="closePopup()" class="buttons">Отправить</button></div>
+                        </form>
+                    </div>
+                    <p style="margin-left: 35px">закажите что нибудь</p>
+
+                    <div class = "flexbox-container">
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="сайт-визитка">
+                            <p>Сайт-визитка</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="корпоративный сайт">
+                            <p>Корпоративный сайт</p>   
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="интернет-магазин">
+                            <p>Интернет-магазин</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>   
+                        </div>
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="сайт-визитка">
+                            <p>Мобильное приложение</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="корпоративный сайт">
+                            <p>Видеоигра</p>   
+                            <button onclick="openPopup()" class="buttons">Заказать</button>
+                        </div>
+                        <div class="flexbox-child">
+                            <img src="me.jpg" width=250px class="imgservices" alt="интернет-магазин">
+                            <p>Что-угодно</p>
+                            <button onclick="openPopup()" class="buttons">Заказать</button>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="basicDiv basicDiv-flex">                           <!-- низ -->
+                <div id="footerLeft">
+                    <p class="footerMe"> Андронова Арина Андреевна, 2024</p>
+                </div>
+                <div id="footerRight">
+                    <nav>
+                        <ul id="footerRightUl">
+                            <li class="footerLi"><a href="https://vk.com/jokes_about_dicks" class="contact"><img src="vk.png" id="vk" alt="вк"></a></li>
+                            <li class="footerLi"><a href="https://t.me/morfph" class="contact"><img src="tg.png" id="tg" alt="тг"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

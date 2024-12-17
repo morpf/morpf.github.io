@@ -1,0 +1,165 @@
+<!DOCTYPE html>               <!-- Это комментарий в HTML -->
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Второй семестр</title>
+        <link rel="stylesheet" href="style.css">                      <!-- ссылка на css -->
+        <link rel="icon" href="icon.jpg">                             <!-- фавикон -->
+        <script type = "text/javascript" src="functions.js"></script> <!-- ссылка на js -->
+    </head>
+    <body>
+        <div class="overlay"></div>                    <!-- затемнение при открытии формы -->
+        <header>                                       <!-- лого и группа -->
+            <div class="basicDiv"> 
+                <div id="headerLeftDiv">
+                    <img src="icon.jpg" id="Logo" alt="лого">
+                    <p style="margin-top:10px">Лого</p>
+                </div>
+                <div id="headerRightDiv">
+                    <p style="margin-top:27px; margin-bottom:10px">Группа ЭФБО-02-23</p>
+                    <p style="margin-top:10px">Андронова Арина Андреевна</p>
+                </div>
+            </div>
+
+            <div class="flexbox">                    <!-- навигация по сайту -->
+                <nav>
+                    <ul>
+                        <li class="navli"><a href="mainPage.html">Главная</a></li>
+                        <li class="navli"><a href="#">Первый семестр</a></li>
+                        <li class="navli"><a href="secondsemPage.html">Второй семестр</a></li>
+                        <li class="navli"><a href="servicesPage.html">Услуги</a></li>
+                        <li class="navli"><a href="#">Авторизация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="basicDiv" style="display:flex">
+                <div id="mainLeftDiv">
+                    <p id="pNavigation"><span>Навигация по странице</span></p>     <!-- навигация по странице -->
+                    <nav>
+                        <ul class="navLeftUl">
+                            <li class="navLeftLi"><a href="#lections">Лекции</a></li>
+                            <li class="navLeftLi"><a href="#practics">Практики</a></li>
+                            <li class="navLeftLi"><a href="#adress">Адрес вуза</a></li>
+                            <li class="navLeftLi"><a href="#plan">Рабочая программа</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div id="mainRightDiv">                                <!-- основной блок -->
+                    <h2 style="margin-left: 35px">Первый семестр</h2>
+                    <h4 style="margin-left: 35px" id="lections">Лекции</h4>
+                    <table class="Tables" cellspacing="0">
+                        <tr>
+                            <thead><td id="td1">Номер</td><td id="td2">Тема</td><td id="td3">Посещение</td></thead>
+                        </tr>
+                        <tr>
+                            <td>1</td><td>Основы языка HTML</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>Углубленное изучение HTML</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>Основы работы с CSS</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>Адаптивная верстка. Flexbox и Grid Layot</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td>Bootstrap - работа с фреймворком</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td><td>Работа с DOM и событиями в JavaScript</td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td>Введение в GitHub и GitHub Pages</td><td><input type="checkbox"></td>
+                        </tr>
+
+                    </table>
+
+                    <h4 style="margin-left: 35px" id="practics">Практики</h4>
+                    <table class="Tables" cellspacing="0">
+                        <tr>
+                            <thead><td id="td1">Номер</td><td id="td2">Тема</td><td id="td3">Посещение</td><td id="td4">Выполнение</td></thead>
+                        </tr>
+                        <tr>
+                            <td>1</td><td>Основы языка HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>Формы и кнопки в <HTML></HTML></td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>Таблицы и интерактивные элементы HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>Основы работы с CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td><td>Работа с классами в CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>Работа с сетками и разметкой в HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td><td>Адаптивная вёрстка</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td>Bootstrap</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td><td>Базовый задачи на JS</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td>DOM-структура</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>12</td><td>Встраивание скриптов</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>13</td><td>Отладка сценариев</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>14</td><td>Анимации и работа с ними</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>15</td><td>GitHub</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>16</td><td>Защита проекта</td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+                        </tr>
+
+                    </table>
+                    <p id="adress">Занятия проходят по адресу просп. Вернадского, 78, стр. 4</p>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A61b8a28f72d04f66125b9d0f851b516391b180ad868e564c0644d9dc7f80658e&amp;source=constructor" id="map" frameborder="0"></iframe>
+                    <p style="margin-left: 35px" id="plan">Рабочая программа</p>
+                    <object data="https://drive.google.com/file/d/1e5ZdbasvbNN7zSddWetgYjUujgejNndm/view?usp=sharing" type="application/pdf">
+                        <iframe src="https://drive.google.com/file/d/1e5ZdbasvbNN7zSddWetgYjUujgejNndm/preview" allow="autoplay" id="pdf"></iframe>
+                    </object>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="basicDiv basicDiv-flex">                           <!-- низ -->
+                <div id="footerLeft">
+                    <p class="footerMe"> Андронова Арина Андреевна, 2024</p>
+                </div>
+                <div id="footerRight">
+                    <nav>
+                        <ul id="footerRightUl">
+                            <li class="footerLi"><a href="https://vk.com/jokes_about_dicks" class="contact"><img src="vk.png" id="vk" alt="вк"></a></li>
+                            <li class="footerLi"><a href="https://t.me/morfph" class="contact"><img src="tg.png" id="tg" alt="тг"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
